@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./shop.scss";
 import axios from "../../api";
 
@@ -15,7 +16,9 @@ const ShopAll = () => {
     return (
       <div className="shop__product" key={product.id}>
         <div className="shop__img">
-          <img src={product.images[0]} alt="" />
+          <Link to={`/single/${product.id}`}>
+            <img src={product.images[0]} alt="" />
+          </Link>
         </div>
         <p className="shop__desc">{product.description}</p>
       </div>
