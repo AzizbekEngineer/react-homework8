@@ -1,0 +1,22 @@
+.aboutPage {
+    padding: 0 0 30px;
+
+    &__desc {
+        padding: 20px 0;
+    }
+
+    &__title {
+        font-size: 38px;
+        line-height: 40px;
+        color: red;
+    }
+}
+
+@media (max-width:450px) {
+    .aboutPage {
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

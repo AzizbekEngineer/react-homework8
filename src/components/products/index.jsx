@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./product.scss";
 import axios from "../../api";
 import Loading from "../loading/Loading";
+import { Link } from "react-router-dom";
 import "./product.scss";
 
 const Product = () => {
@@ -28,7 +29,9 @@ const Product = () => {
     return (
       <div class="product__card" key={product.id}>
         <div class="product__img">
-          <img src={product.images[0]} alt="" />
+          <Link to={`/single/${product.id}`}>
+            <img src={product.images[0]} alt="" />
+          </Link>
         </div>
         <div class="product__info">
           <h3 class="product__desc">{product.title}</h3>
