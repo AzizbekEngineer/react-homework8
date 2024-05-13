@@ -1,0 +1,46 @@
+.footer {
+    padding: 40px 0;
+    background: #EDF2F4;
+
+    &__cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__card {
+        width: 200px;
+
+    }
+
+    &__logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__list__title {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+    &__item {
+        font-size: 16px;
+        padding-top: 5px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid transparent;
+        cursor: pointer;
+
+        &:hover {
+            border-color: black;
+        }
+    }
+
+    &__icons {
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
